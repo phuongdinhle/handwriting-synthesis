@@ -1,3 +1,4 @@
+# coding=utf-8
 import os
 import sys
 import cv2
@@ -40,9 +41,8 @@ from skimage.transform import rescale
 #         return email
 
 def generate_random_string():
-    # vocab = list('0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.')
-    vocab = list('種子')
-
+    vocab = list('0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.')
+    
     n_chars = np.random.randint(1, 30)
     result = ''
     for i in range(n_chars):
